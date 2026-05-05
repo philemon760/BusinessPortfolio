@@ -1,29 +1,29 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { LuGraduationCap } from "react-icons/lu";
 import {
-  FaCode,
-  FaPaintBrush,
-  FaChartBar,
-  FaBullhorn,
-  FaReact,
+  FaHeartbeat,
+  FaVideo,
+  FaFlask,
+  FaShieldAlt,
+  FaHospital,
+  FaUserMd,
 } from "react-icons/fa";
+import { MdHealthAndSafety } from "react-icons/md";
+
 export const links = [
   {
     name: "Home",
     hash: "#home",
   },
- 
   {
     name: "Services",
     hash: "#services",
   },
   {
-    name: "Skills",
+    name: "Expertise",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Journey",
     hash: "#experience",
   },
   {
@@ -38,74 +38,83 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated in Computer Science",
-    location: "Karachi, Pakistan",
+    title: "MediCare Plus Founded",
+    location: "Austin, Texas, USA",
     description:
-      "Completed my degree in Computer Science and began my journey into full-stack web development.",
-    icon: React.createElement(LuGraduationCap),
+      "Established MediCare Plus with a mission to make high-quality healthcare accessible to all Americans. Opened our first flagship clinic in Austin with 15 board-certified physicians.",
+    icon: React.createElement(FaHospital),
+    date: "2018",
+  },
+  {
+    title: "Expanded Telehealth Services",
+    location: "Nationwide – Remote Care, USA",
+    description:
+      "Launched our HIPAA-compliant digital health platform enabling patients across all 50 states to consult licensed doctors from home. Reached over 10,000 virtual consultations in year one.",
+    icon: React.createElement(FaVideo),
     date: "2020",
   },
   {
-    title: "MERN Stack Developer",
-    location: "Freelance - Remote",
+    title: "Opened New Medical Centers",
+    location: "Dallas, TX & Atlanta, GA",
     description:
-      "Worked on various freelance projects building modern websites and full-stack applications using React, Node.js, MongoDB, and Express.js.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2020 - 2023",
+      "Expanded to two state-of-the-art medical centers equipped with advanced diagnostic labs, radiology suites, and specialist care units serving the Southeast and South-Central US.",
+    icon: React.createElement(FaUserMd),
+    date: "2022",
   },
   {
-    title: "Founder at [Your Brand Name]",
-    location: "Remote",
+    title: "Serving 50,000+ Patients",
+    location: "USA – Nationwide",
     description:
-      "Currently offering full-stack development services, specializing in React, Next.js, Tailwind CSS, and building scalable business solutions for global clients.",
-    icon: React.createElement(FaReact),
-    date: "2023 - Present",
+      "Crossed the landmark milestone of 50,000 registered patients. Introduced AI-powered health records, preventive care programs, and 24/7 emergency response services.",
+    icon: React.createElement(MdHealthAndSafety),
+    date: "2024",
   },
 ] as const;
 
 export const servicesData = [
   {
-    title: "Full-Stack Development",
+    title: "Primary Care",
     description:
-      "We build robust, scalable web applications from frontend to backend, delivering seamless user experiences and efficient server-side logic.",
-    skills: ["React", "Next.js", "Node.js", "MongoDB", "Prisma", "TypeScript"],
-    icon: React.createElement(FaCode),
+      "Comprehensive general medical care for patients of all ages. Our board-certified physicians provide personalized health evaluations, chronic disease management, and routine wellness checkups.",
+    skills: ["General Medicine", "Family Health", "Chronic Care", "Vaccinations"],
+    icon: React.createElement(FaHeartbeat),
   },
   {
-    title: "Frontend Development",
+    title: "Telehealth Services",
     description:
-      "We create responsive, interactive user interfaces with modern frameworks, ensuring pixel-perfect designs and smooth performance.",
-    skills: ["React", "TypeScript", "Tailwind", "Framer Motion", "Redux"],
-    icon: React.createElement(FaPaintBrush),
+      "Consult with our licensed US doctors from the comfort of your home. Our HIPAA-secure video platform delivers prompt, professional medical advice — anytime, anywhere across all 50 states.",
+    skills: ["Video Consult", "E-Prescriptions", "Follow-ups", "24/7 Support"],
+    icon: React.createElement(FaVideo),
   },
   {
-    title: "Web App Analytics",
+    title: "Diagnostics & Lab Testing",
     description:
-      "We develop tools for analyzing web content, providing insights like word counts, character limits, and social media compatibility.",
-    skills: ["React", "Next.js", "PostgreSQL", "Tailwind", "GraphQL"],
-    icon: React.createElement(FaChartBar),
+      "Cutting-edge diagnostic services including blood panels, imaging, ECG, and pathology. Receive accurate, CLIA-certified results with rapid turnaround, reviewed by licensed specialists.",
+    skills: ["Blood Tests", "MRI / X-Ray", "ECG", "Pathology"],
+    icon: React.createElement(FaFlask),
   },
   {
-    title: "Digital Marketing",
+    title: "Preventive Health Checkups",
     description:
-      "We provide comprehensive digital marketing solutions, including SEO, social media strategies, and content marketing to boost your online presence.",
-    skills: ["SEO", "Social Media", "Google Ads", "Analytics"],
-    icon: React.createElement(FaBullhorn),
+      "Proactive health screening packages designed to detect risks early. Our preventive care plans cover cardiovascular, diabetes, cancer markers, and comprehensive full-body assessments.",
+    skills: ["Full Body Scan", "Cardiac Screen", "Diabetes Panel", "Cancer Markers"],
+    icon: React.createElement(FaShieldAlt),
   },
 ] as const;
+
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Prisma",
-  "Tailwind",
-  "Git",
-  "Framer Motion",
-  "Redux",
+  "Patient Care",
+  "Emergency Services",
+  "Digital Health Records",
+  "Telemedicine",
+  "Clinical Diagnostics",
+  "Surgical Care",
+  "Pediatrics",
+  "Cardiology",
+  "Radiology",
+  "Pharmacy",
+  "Mental Health",
+  "Vaccination Programs",
+  "Rehabilitation",
+  "Nutrition & Wellness",
 ] as const;

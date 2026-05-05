@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPaperPlane } from "react-icons/fa";
+import { BsCalendarCheckFill } from "react-icons/bs";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
 
 export default function SubmitBtn() {
@@ -8,15 +8,15 @@ export default function SubmitBtn() {
   return (
     <button
       type="submit"
-      className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+      className="group flex items-center justify-center gap-2 h-[3.25rem] w-full bg-[#0096c7] text-white rounded-xl outline-none transition-all focus:scale-[1.02] hover:scale-[1.02] hover:bg-[#0077b6] active:scale-100 disabled:scale-100 disabled:bg-opacity-65 font-semibold text-base shadow-md shadow-[#0096c7]/25"
       disabled={pending}
     >
       {pending ? (
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
       ) : (
         <>
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+          <BsCalendarCheckFill className="text-sm opacity-80" />
+          Confirm Appointment Request
         </>
       )}
     </button>
