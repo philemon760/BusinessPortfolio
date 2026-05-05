@@ -1,6 +1,6 @@
 
 
-first install npm i    then npm run dev to run the project bro.. 
+first install npm i    then npm run dev to run the project .. 
 
 
 
